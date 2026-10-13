@@ -1,0 +1,14 @@
+node_modules/
+out/
+dist/
+release/
+site-dist/
+# Local packaging runs (electron-builder -c.directories.output=...).
+m2/
+pkg/
+dist-custom/
+native/hook-helper/build/
+*.log
+.DS_Store
+tools/extract-assets/.cache/
+tools/extract-assets/__pycache__/
