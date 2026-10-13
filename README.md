@@ -64,7 +64,7 @@ Updating from v0.4 or earlier: download the new version by hand once. From v0.5 
 
 On a Mac, use **⌥ Option** instead of Alt, **⌃ Control** instead of Ctrl for emotes, **⌃⌥P** to pause, and the ping icon in the menu bar instead of the tray icon.
 
-The wheel, from the top going clockwise: Danger, Push, On My Way, All In, Assist Me, Need Vision, Enemy Missing, Enemy Vision. You can rearrange it and add Bait or Vision Cleared in settings. The emote wheel has 8 slots too, and you pick its emotes in settings.
+The wheel, from the top going clockwise: Danger, Push, On My Way, All In, Assist Me, Need Vision, Enemy Missing, Enemy Vision. You can rearrange it and add Bait or Vision Cleared in settings. The emote wheel works the same way, and you pick its emotes in settings. Either wheel can have more than 8 slices — see **Wheel slots** below.
 
 ## Settings
 
@@ -76,6 +76,7 @@ The wheel, from the top going clockwise: Danger, Push, On My Way, All In, Assist
 - **Enable / disable shortcut:** must include Ctrl, Alt or Win (⌃, ⌥ or ⌘ on a Mac).
 - **Pings and sound:** size, duration, volume, mute and the wheel's tick sound.
 - **Wheel:** drag any ping onto any slice, including Bait and Vision Cleared, or onto the centre to make it the Alt + click ping. Click a ping to preview it. **Reset to default** brings back League's layout.
+- **Wheel slots:** how many slices a wheel has: 4, 6, 8 or 10 for pings, or any even count up to 24 for emotes. A new slice takes the first item that is not on the wheel yet, and the icons shrink as slices crowd the ring.
 - **Emotes:** the emote key (Ctrl by default, or off), **Ctrl + click places an emote** (off by default), emote size, emote sound and the emote wheel, which you edit like the ping wheel. **Add image…**, or dropping a file on the list, adds your own images: PNG, JPG, GIF or WebP, up to 24. Animated ones play on your screen only.
 - **Launch at Windows startup** (**Open at login** on a Mac): starts hidden in the tray or menu bar.
 - **Language:** follows the system display language, or pick English or 简体中文.
@@ -103,7 +104,7 @@ Join a room and everyone in it sees your pings on their own screen, at the same 
 - **Same network:** the first time, Windows asks whether lolPing may use the network: allow it, and set your Wi‑Fi to **Private** (Windows blocks it on Public networks). A Mac asks to find devices on the local network.
 - **Different networks:** with **Allow internet connections** on (the default), friends anywhere join with the same code. Their pings travel through free public [Nostr](https://nostr.com) relays and take a moment longer than on a local network, which is still used whenever it works. Virtual LANs such as ZeroTier or Radmin VPN work too, and Tailscale users simply connect over the internet.
 - A ping lands on the display with the same number (1 is the primary display), or on display 1.
-- **Emotes** travel like pings: friends see yours on their own screen with your name under it. Your own images show as a "?" to friends for now. Friends on v0.4 or older don't see emotes, and the Room page says so under their names.
+- **Emotes** travel like pings: friends see yours on their own screen with your name under it. Your own imported images travel too, as a still fetched ahead of time, so friends see the picture instead of a "?" — **Show friends' custom emotes** turns that off. Friends on v0.4 or older don't see emotes, and the Room page says so under their names. See [CHANGES.md](CHANGES.md) for what this build changes.
 - **Mute room**, muting one person, and an **Incoming ping and emote limit** (up to Unlimited, counted for both together) keep the spam under control. Pausing lolPing with the shortcut pauses room pings and emotes too.
 - A room holds up to 8 people. Leave and create a new room to get rid of someone.
 - **Privacy:** pings, emotes and names are end-to-end encrypted with a key made from the room code. People on your network can see your local IP address. With internet connections on, public relays see your IP address, an anonymous room ID and when you send, but never your pings, emotes or name. Turn **Allow internet connections** off to stay on your local network.
